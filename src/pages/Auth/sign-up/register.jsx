@@ -2,13 +2,13 @@ import { Form, Input, Typography, Card, Button,Col, Row,Select } from "antd";
 import { useHistory, Link } from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 
-import {signupUser} from "../Auth";
-import {selectAuth} from "../Auth/auth.selectors";
+import {signupUser} from "../../../store/Auth";
+import {selectAuth} from "../../../store/Auth/auth.selectors";
 import React, {useEffect, useState} from "react";
 import {Status} from "../../../store/store.types";
 import validator from "validator";
 import Routes from "../../../Constants/routes";
-import {LOG_g} from "../Auth/auth.actions";
+import {LOG_g} from "../../../store/Auth/auth.actions";
 
 //import "./style.css";
 

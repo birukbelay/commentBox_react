@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import { connect, useSelector } from 'react-redux';
-import {SelectAuthStatus, IsAuthenticated} from "../pages/Auth/Auth/auth.selectors";
+import {SelectAuthStatus, IsAuthenticated} from "../store/Auth/auth.selectors";
 import { createStructuredSelector } from "reselect";
 
 export const AuthRoute = ({ component: Component,  ...rest }) => {

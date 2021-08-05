@@ -45,7 +45,7 @@ const responses=[
     id:"",
     question:"",
     answer:""
-  }
+  },
 ]
 
 const toolips={

@@ -1,13 +1,19 @@
-import * as Types from './user.types';
-import authActionTypes from "../Auth/auth_types";
-import {Status} from "../store.types";
+import  authActionTypes from './auth_types';
+
+import {Status} from '../store.types'
 
 const initialState = {
-
-    loading: false,
+    authenticated: false,
+    authError:"",
+    signError:"",
+    token:"",
+    status:Status.NORMAL,
+    //user related
+    isAdmin:false,
+    currentUser: {},
 };
 
-const userReducer = ( state = initialState, action)=> {
+const authReducer = (state = initialState, action)=> {
     switch (action.type) {
 
         case authActionTypes.LOGIN_SUCCESS:
@@ -68,3 +74,5 @@ const userReducer = ( state = initialState, action)=> {
             return state;
     }
 }
+
+export default authReducer;

@@ -6,8 +6,9 @@ export const Status = {
 }
 
 export const Query = {
-    CREATE: 'create',
-    UPDATE: 'update',
-    DELETE: 'delete',
-    LOAD: 'load',
+    CREATE: 'CREATE',
+    UPDATE: 'UPDATE',
+    DELETE: 'DELETE',
+    FETCH_ONE: 'FETCH_ONE',
+    FETCH:"FETCH"
 }

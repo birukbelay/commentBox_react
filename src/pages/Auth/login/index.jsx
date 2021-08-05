@@ -3,9 +3,9 @@ import { useHistory, Link } from "react-router-dom";
 import validator from "validator";
 import React, { useState, useEffect } from "react";
 // import "./style.css";
-import {loginUser} from "../Auth";
+import {loginUser} from "../../../store/Auth";
 import {useDispatch, useSelector} from "react-redux";
-import {selectAuth} from "../Auth/auth.selectors";
+import {selectAuth} from "../../../store/Auth/auth.selectors";
 
 import {Status} from "../../../store/store.types";
 

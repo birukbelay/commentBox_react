@@ -7,14 +7,14 @@ import { PersistGate } from "redux-persist/integration/react";
 import "antd/dist/antd.css";
 import './index.css';
 
-import App from './App';
+import App from './App/App';
 import reportWebVitals from './reportWebVitals';
 
 import { Provider } from 'react-redux';
 
 import { Store, persistor } from "./store/store";
 import {API_ROOT} from "./Constants/constants";
-import {CheckExpiredToken} from "./pages/Auth/Auth";
+import {CheckExpiredToken} from "./store/Auth";
 
 
 
