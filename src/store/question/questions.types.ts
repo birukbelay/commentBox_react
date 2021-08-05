@@ -9,12 +9,6 @@ export interface IQuestion{
 
 
 
-export type  QuestionAction = {
-    type: string
-    question:IQuestion
-}
-
-type DispatchType = (args: QuestionAction) => QuestionAction
 export interface QuestionState{
     questions?:IQuestion[],
     question?:{},
@@ -22,6 +16,13 @@ export interface QuestionState{
     error:Error,
     queryType:string,
 }
+
+export type  QuestionAction = {
+    type: string
+    question:IQuestion
+}
+
+type DispatchType = (args: QuestionAction) => QuestionAction
 
 export interface Action {
     type?: string;

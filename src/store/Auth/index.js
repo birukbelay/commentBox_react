@@ -86,7 +86,9 @@ export const CheckExpiredToken=()=>(dispatch) =>{
     const objectToken= JSON.parse(localUser)
     dispatch(LOG_g("checking token", objectToken))
     if (localUser) {
-        const decodedToken = jwtDecode(objectToken?.token);
+        // @ts-ignore
+        // @ts-ignore
+        const decodedToken = jwtDecode(objectToken.token)
         dispatch(LOG_g("decoded Token", decodedToken))
         if (decodedToken.exp * 1000 < Date.now()) {
             dispatch(logoutUser());

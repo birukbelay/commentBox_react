@@ -12,7 +12,8 @@ import reportWebVitals from './reportWebVitals';
 
 import { Provider } from 'react-redux';
 
-import { Store, persistor } from "./store/store";
+import store  from "App/store";
+// import { Store } from "./store/store";
 import {API_ROOT} from "./Constants/constants";
 import {CheckExpiredToken} from "./store/Auth";
 
@@ -20,11 +21,11 @@ import {CheckExpiredToken} from "./store/Auth";
 
 axios.defaults.baseURL = API_ROOT;
 
-Store.dispatch(CheckExpiredToken())
+// store.dispatch(CheckExpiredToken())
 
 ReactDOM.render(
     <React.StrictMode>
-      <Provider store={Store}>
+      <Provider store={store}>
           {/*<PersistGate persistor={persistor}>*/}
                   <App />
           {/*</PersistGate>*/}
