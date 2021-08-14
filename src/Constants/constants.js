@@ -15,3 +15,10 @@ export const NetworkImage=(path, image)=>{
 }
 
 export const USER_TOKEN="USER_TOKEN"
+
+export const LOG_g = (name, value) => ({
+    type: `LOGGING-->>${name}`,
+    name,
+    value
+});
+export const PUBLIC_FOLDER = 'http://localhost:3000/assets/';

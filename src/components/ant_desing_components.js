@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import { Component, useState } from 'react';
 import {Form, InputNumber} from "antd";
 
 const AntDesingComponents =()=> {

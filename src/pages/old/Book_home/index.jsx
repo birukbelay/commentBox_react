@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card, Row, Col, Button, Pagination } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 
-import AddQuestion from "../../../components/add-question";
+import AddQuestion from "../../../components/add-with-Image";
 import TopBar from "../../../components/tob-bar";
 import Feed from "../houses/feed/Feed";
 const Home = () => {
@@ -51,24 +51,7 @@ const Home = () => {
         
         <>
         <Feed/>
-          {/* <Row gutter={16}>
-            <Col span={5} onClick={handleBookClick}>
-              <Card
-                hoverable
-                cover={
-                  <img
-                    src={`https://picsum.photos/200/300`}
-                    alt="This is alt"
-                  />
-                }
-              >
-                <Card.Meta
-                  title="You don't know JS"
-                  description="This is the book description"
-                />
-              </Card>
-            </Col>
-          </Row> */}
+
           <div
             style={{
               display: "flex",

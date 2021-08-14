@@ -1,6 +1,5 @@
-import React from "react"
 import "./topbar.css";
-import { Search, Person, Chat, Notifications } from "@material-ui/icons";
+
 import { Link } from "react-router-dom";
 import { Typography, Avatar, Space, Menu, Dropdown, Button } from "antd";
 // import { useContext } from "react";
@@ -13,7 +12,7 @@ export default function Topbar() {
      * TODO: Handle Logout
      */
   };
-  const user = useSelector(state => state.user)
+  const user = useSelector(state => state.auth)
   console.log("---===>",user)
   
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;

@@ -1,12 +1,12 @@
 import "./profile.css";
 import Topbar from "../../../components/topbarHouse/Topbar";
 
-import Rightbar from "../../../components/rightbar/Rightbar";
-import React, { useEffect, useState } from "react";
+
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import {API_ROOT, PUBLIC_FOLDER} from "../../../store/constants";
 import './profile.css'
+import {PUBLIC_FOLDER} from "../../../Constants/constants";
 export default function Profile() {
     const PF = process.env.REACT_APP_PUBLIC_FOLDER;
     const [house, setHouse] = useState({});
@@ -14,7 +14,7 @@ export default function Profile() {
 
     useEffect(() => {
         const fetchUser = async () => {
-            const res = await axios.get(API_ROOT+`house/${username}`);
+            const res = await axios.get(`house/${username}`);
             console.log("house single ==>", res.data)
             setHouse(res.data);
         };

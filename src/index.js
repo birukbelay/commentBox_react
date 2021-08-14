@@ -1,4 +1,4 @@
-import React from 'react';
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios'
 import { PersistGate } from "redux-persist/integration/react";
@@ -7,30 +7,30 @@ import { PersistGate } from "redux-persist/integration/react";
 import "antd/dist/antd.css";
 import './index.css';
 
-import App from './App/App';
+import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 
 import { Provider } from 'react-redux';
 
-import store  from "App/store";
-// import { Store } from "./store/store";
-import {API_ROOT} from "./Constants/constants";
-import {CheckExpiredToken} from "./store/Auth";
+import store  from "./app/store";
+
+
+import {CheckExpiredToken} from "./features/users/users.reducer";
 
 
 
-axios.defaults.baseURL = API_ROOT;
 
-// store.dispatch(CheckExpiredToken())
+
+store.dispatch(CheckExpiredToken())
 
 ReactDOM.render(
-    <React.StrictMode>
+    <StrictMode>
       <Provider store={store}>
           {/*<PersistGate persistor={persistor}>*/}
                   <App />
           {/*</PersistGate>*/}
       </Provider>,
-    </React.StrictMode>,
+    </StrictMode>,
   document.getElementById('root')
 );
 

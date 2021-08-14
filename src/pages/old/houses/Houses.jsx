@@ -1,4 +1,3 @@
-import React from "react"
 import Topbar from "../../../components/topbarHouse/Topbar";
 
 import Feed from "./feed/Feed";

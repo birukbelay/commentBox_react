@@ -1,5 +1,4 @@
 import {Form, Rate} from "antd";
-import React from "react";
 import {FrownOutlined, MehOutlined, SmileOutlined} from "@ant-design/icons";
 
 
@@ -18,40 +17,9 @@ const comment={
             answer:"the answer given"
         }
     ]
-
-
-
-
-
 }
 
 const questi=["ምን ያህል ተደስተካል?", "በቀናነት ተስተናግደካል?","በደንብ ተባብረውካል ?"]
-
-const questions=[
-    {
-        questionId:1,
-        question:"ምን ያህል ተደስተካል?", //this canNotBeUpdated
-        iconsIndex:1,
-        tooltipsIndex:1,
-        isRequired:true
-
-    },{
-        questionId:1,
-        question:"በቀናነት ተስተናግደካል?", //this canNotBeUpdated
-        tooltipsIndex:1,
-        iconsIndex:1,
-        isRequired:true
-    },{
-        questionId:1,
-        question:"በደንብ ተባብረውካል ?", //this canNotBeUpdated
-        tooltipsIndex:1,
-        iconsIndex:1,
-        isRequired:true,
-
-        icons:{},
-        tooltips:[],
-    },
-]
 
 
 const responses={

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Editor from "../../../components/editor";
 import { Button } from "antd";
-import AddAuthor from "../../../components/add-author";
+import AddQuestion from "../../../components/add-question";
 import TopBar from "../../../components/tob-bar";
 import { ShareAltOutlined } from "@ant-design/icons";
 
@@ -31,7 +31,7 @@ const Collaboration = () => {
           </Button>
         </div>
         <Editor id={1} />
-        <AddAuthor
+        <AddQuestion
           isOpen={isModalOpen}
           onClose={() => setModal(false)}
           id={1}

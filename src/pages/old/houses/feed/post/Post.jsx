@@ -1,11 +1,10 @@
 import "./post.css";
-import React from "react"
 import { MoreVert } from "@material-ui/icons";
 import { useContext, useEffect, useState } from "react";
 // import axios from "axios";
 // import { format } from "timeago.js";
 import { Link } from "react-router-dom";
-import {PUBLIC_FOLDER} from "../../../../../store/constants";
+import {PUBLIC_FOLDER} from "../../../../../Constants/constants";
 
 
 export default function Post({ house }) {
